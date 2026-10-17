@@ -1,0 +1,21 @@
+# Core simulation + RL stack (versions used for every number in the paper)
+mujoco==2.3.3
+stable-baselines3==2.4.1
+gymnasium==0.29.1
+
+# PyTorch: install the build matching your CUDA version first, e.g.
+#   pip install torch==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+torch>=2.0.0
+
+# Pose estimation / video decoding
+mediapipe==0.10.18
+opencv-python>=4.8
+
+# Numerics / logging / figures
+numpy>=1.23,<2
+scipy>=1.10
+tensorboard>=2.13
+matplotlib>=3.6
+
+# Interactive viewer used by show_robio.py
+mujoco-python-viewer>=0.1.1

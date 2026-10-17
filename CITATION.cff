@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this code or these models, please cite both the paper and this repository."
+title: "Video-Derived Gaits for Low-Cost 10-DoF Humanoids"
+type: software
+authors:
+  - family-names: Wu
+    given-names: Qingtian
+  - family-names: Chen
+    given-names: Xu
+  - family-names: Yan
+    given-names: Xiaohu
+  - family-names: Yang
+    given-names: Ou
+  - family-names: Yang
+    given-names: Jinfeng
+repository-code: "https://github.com/1298346618/pandaman-video-gait"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-17
+keywords:
+  - reinforcement learning
+  - motion imitation
+  - pose estimation
+  - humanoid locomotion
+  - MoCap-free
+preferred-citation:
+  type: conference-paper
+  title: "When Less Imitation Is More: Lightweight Phase-Coupled Tracking of Video-Derived Gaits for Low-Cost 10-DoF Humanoids"
+  authors:
+    - family-names: Wu
+      given-names: Qingtian
+    - family-names: Chen
+      given-names: Xu
+    - family-names: Yan
+      given-names: Xiaohu
+    - family-names: Yang
+      given-names: Ou
+    - family-names: Yang
+      given-names: Jinfeng
+  conference:
+    name: "IEEE International Conference on Robotics and Biomimetics (ROBIO)"
+  year: 2026

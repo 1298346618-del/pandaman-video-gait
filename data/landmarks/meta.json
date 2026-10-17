@@ -1,0 +1,9 @@
+{
+  "video": "walk_sideview.mp4",
+  "fps": 29.97002997002997,
+  "total_frames": 356,
+  "extracted_frames": 356,
+  "detected_frames": 356,
+  "detection_rate": 1.0,
+  "normalized_coords": true
+}

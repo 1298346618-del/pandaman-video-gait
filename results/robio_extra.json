@@ -1,0 +1,89 @@
+{
+  "baseline_A": {
+    "speed_profile": {
+      "0.0": {
+        "total_reward_mean": 2065.167186410621,
+        "total_reward_std": 40.581226622725296,
+        "push_recovery_rate": 1.0
+      },
+      "0.2": {
+        "total_reward_mean": 2000.376412381621,
+        "total_reward_std": 46.020445117633024,
+        "push_recovery_rate": 1.0
+      },
+      "0.4": {
+        "total_reward_mean": 1862.1474775860493,
+        "total_reward_std": 41.32277363184586,
+        "push_recovery_rate": 1.0
+      },
+      "0.6": {
+        "total_reward_mean": 1667.9869983068693,
+        "total_reward_std": 39.21111173347317,
+        "push_recovery_rate": 1.0
+      }
+    },
+    "gait_naturalness": {
+      "cadence_hz": 1.9614733389132457,
+      "foot_slip": 0.06250237928550152,
+      "mean_torque_nm": 2.4557190867423655
+    }
+  },
+  "human_B_s42": {
+    "speed_profile": {
+      "0.0": {
+        "total_reward_mean": 2513.5120024475577,
+        "total_reward_std": 40.332531525003425,
+        "push_recovery_rate": 1.0
+      },
+      "0.2": {
+        "total_reward_mean": 2218.0363034417283,
+        "total_reward_std": 57.085400682543735,
+        "push_recovery_rate": 1.0
+      },
+      "0.4": {
+        "total_reward_mean": 1984.4423343833992,
+        "total_reward_std": 76.76199113624595,
+        "push_recovery_rate": 1.0
+      },
+      "0.6": {
+        "total_reward_mean": 1869.6719235046705,
+        "total_reward_std": 40.9724193942425,
+        "push_recovery_rate": 1.0
+      }
+    },
+    "gait_naturalness": {
+      "cadence_hz": 2.1292349319684867,
+      "foot_slip": 0.03665669110625479,
+      "mean_torque_nm": 4.833534234208459
+    }
+  },
+  "human_C_ours_s42": {
+    "speed_profile": {
+      "0.0": {
+        "total_reward_mean": 2943.8074942807407,
+        "total_reward_std": 48.66142874419272,
+        "push_recovery_rate": 1.0
+      },
+      "0.2": {
+        "total_reward_mean": 2576.389422654022,
+        "total_reward_std": 55.490593840468804,
+        "push_recovery_rate": 1.0
+      },
+      "0.4": {
+        "total_reward_mean": 2252.0141216911406,
+        "total_reward_std": 53.92107297577963,
+        "push_recovery_rate": 1.0
+      },
+      "0.6": {
+        "total_reward_mean": 2078.709721752085,
+        "total_reward_std": 28.21826862081707,
+        "push_recovery_rate": 1.0
+      }
+    },
+    "gait_naturalness": {
+      "cadence_hz": 3.815579969514366,
+      "foot_slip": 0.04994794906625506,
+      "mean_torque_nm": 1.904196636497467
+    }
+  }
+}

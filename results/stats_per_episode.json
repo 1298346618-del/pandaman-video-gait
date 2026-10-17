@@ -1,0 +1,231 @@
+{
+  "n_episodes": 20,
+  "max_ep_steps": 500,
+  "per_model": {
+    "A_single": {
+      "reward_mean": 1873.8829161391745,
+      "reward_std": 137.29657028794645,
+      "ep_len_mean": 500.0,
+      "survived_full": 1.0,
+      "rmse_mean": 0.1738044206000063
+    },
+    "robio_human_s42": {
+      "reward_mean": 2092.7511127572993,
+      "reward_std": 162.2468225736959,
+      "ep_len_mean": 500.0,
+      "survived_full": 1.0,
+      "rmse_mean": 0.295683231114708
+    },
+    "robio_human_s100": {
+      "reward_mean": 1949.2738680198095,
+      "reward_std": 329.3834050236056,
+      "ep_len_mean": 480.2,
+      "survived_full": 0.9,
+      "rmse_mean": 0.27972296229895594
+    },
+    "robio_human_s200": {
+      "reward_mean": 2208.713374508665,
+      "reward_std": 143.9659248239405,
+      "ep_len_mean": 500.0,
+      "survived_full": 1.0,
+      "rmse_mean": 0.3183875543373958
+    },
+    "robio_ablation_s42": {
+      "reward_mean": 2292.9538392754434,
+      "reward_std": 225.1342006092391,
+      "ep_len_mean": 500.0,
+      "survived_full": 1.0,
+      "rmse_mean": 0.18607732636873203
+    },
+    "robio_ablation_s100": {
+      "reward_mean": 2181.6638463855556,
+      "reward_std": 186.83555089952037,
+      "ep_len_mean": 500.0,
+      "survived_full": 1.0,
+      "rmse_mean": 0.1754413112876306
+    },
+    "robio_ablation_s200": {
+      "reward_mean": 2395.48614172005,
+      "reward_std": 191.13016031288657,
+      "ep_len_mean": 500.0,
+      "survived_full": 1.0,
+      "rmse_mean": 0.15601410573012933
+    },
+    "robio_ablation_raw_s42": {
+      "reward_mean": 1831.2785193525626,
+      "reward_std": 434.00420041907665,
+      "ep_len_mean": 454.75,
+      "survived_full": 0.75,
+      "rmse_mean": 0.19690664488273107
+    }
+  },
+  "tests": {
+    "C_vs_B": {
+      "per_seed_means": {
+        "C": [
+          2292.9538392754434,
+          2181.6638463855556,
+          2395.48614172005
+        ],
+        "other": [
+          2092.7511127572993,
+          1949.2738680198095,
+          2208.713374508665
+        ]
+      },
+      "mean_diff_seed_level": 206.4551573650915,
+      "bootstrap95_seed_level": [
+        48.70122342397508,
+        364.20909130620885
+      ],
+      "mannwhitney_seed_level": {
+        "U": 8.0,
+        "p": 0.2
+      },
+      "welch_pooled_episodes": {
+        "t": 4.7504061208451445,
+        "p": 5.863997041326998e-06
+      },
+      "mannwhitney_pooled_episodes": {
+        "p": 5.553908208026978e-06
+      },
+      "hedges_g_seed_level": 1.3878189560578955,
+      "hedges_g_pooled_episodes": 0.8617773163329292,
+      "bootstrap95_pooled_episodes": [
+        123.31846566172025,
+        293.45422310441893
+      ]
+    },
+    "C_vs_A": {
+      "per_seed_means": {
+        "C": [
+          2292.9538392754434,
+          2181.6638463855556,
+          2395.48614172005
+        ],
+        "other": [
+          1873.8829161391745
+        ]
+      },
+      "mean_diff_seed_level": 416.15169298784167,
+      "bootstrap95_seed_level": [
+        307.7809302463811,
+        521.6032255808755
+      ],
+      "mannwhitney_seed_level": {
+        "U": 3.0,
+        "p": 0.5
+      },
+      "welch_pooled_episodes": {
+        "t": 9.778111203681059,
+        "p": 2.275924500043162e-13
+      },
+      "mannwhitney_pooled_episodes": {
+        "p": 2.681424888183732e-09
+      },
+      "hedges_g_seed_level": NaN,
+      "hedges_g_pooled_episodes": 2.0107372857505155,
+      "bootstrap95_pooled_episodes": [
+        335.0010625123791,
+        497.4404993836123
+      ]
+    },
+    "B_vs_A": {
+      "per_seed_means": {
+        "C": [
+          2092.7511127572993,
+          1949.2738680198095,
+          2208.713374508665
+        ],
+        "other": [
+          1873.8829161391745
+        ]
+      },
+      "mean_diff_seed_level": 209.69653562275016,
+      "bootstrap95_seed_level": [
+        75.39095188063516,
+        334.8304583694903
+      ],
+      "mannwhitney_seed_level": {
+        "U": 3.0,
+        "p": 0.5
+      },
+      "welch_pooled_episodes": {
+        "t": 4.618203095259804,
+        "p": 2.1092791011977647e-05
+      },
+      "mannwhitney_pooled_episodes": {
+        "p": 3.899528642437133e-06
+      },
+      "hedges_g_seed_level": NaN,
+      "hedges_g_pooled_episodes": 0.8988764753173264,
+      "bootstrap95_pooled_episodes": [
+        121.4761257421075,
+        296.14260169015404
+      ]
+    },
+    "C_vs_D": {
+      "per_seed_means": {
+        "C": [
+          2292.9538392754434,
+          2181.6638463855556,
+          2395.48614172005
+        ],
+        "other": [
+          1831.2785193525626
+        ]
+      },
+      "mean_diff_seed_level": 458.7560897744536,
+      "bootstrap95_seed_level": [
+        350.385327032993,
+        564.2076223674874
+      ],
+      "mannwhitney_seed_level": {
+        "U": 3.0,
+        "p": 0.5
+      },
+      "welch_pooled_episodes": {
+        "t": 4.42816934794492,
+        "p": 0.00020768865480753104
+      },
+      "mannwhitney_pooled_episodes": {
+        "p": 4.113661403573156e-06
+      },
+      "hedges_g_seed_level": NaN,
+      "hedges_g_pooled_episodes": 1.5539973704241314,
+      "bootstrap95_pooled_episodes": [
+        273.3805723178072,
+        667.8503274997596
+      ]
+    }
+  },
+  "canonical_A_fixed": {
+    "note": "Recomputation with condition A fixed at its canonical 2026-08-05 evaluation value (comparison_robio.json baseline). A is seedless (train_improved.py passes no seed), so its evaluation is stochastic across processes; three protocol-identical runs gave 1848/1850/1874. The canonical value is used as a fixed sample; this section supersedes tests.C_vs_A for the paper (macros ciCA, gCA).",
+    "A_fixed": 1848.1482054761059,
+    "A_three_runs": [
+      1848.1482054761059,
+      1850.2216793045313,
+      1873.8829161391745
+    ],
+    "A_across_run_std": 14.297020407379184,
+    "C_per_seed_means": [
+      2292.9538392754434,
+      2181.6638463855556,
+      2395.48614172005
+    ],
+    "mean_diff_C_minus_A": 441.8864036509103,
+    "bootstrap_95_ci": [
+      333.51564090944976,
+      547.3379362439441
+    ],
+    "bootstrap_95_ci_rounded_paper": [
+      334,
+      547
+    ],
+    "hedges_g_pooled_episodes": 2.2038019500161528,
+    "hedges_g_rounded_paper": 2.2,
+    "pooled_sd": 200.5109413972846,
+    "n_bootstrap": 10000,
+    "rng": "np.random.default_rng(42)"
+  }
+}

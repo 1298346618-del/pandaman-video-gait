@@ -1,0 +1,42 @@
+{
+  "n_cycle_out": 120,
+  "cycle_time_robot": 0.64,
+  "human_stride_period_s": 1.0787878787878789,
+  "fps": 30.0,
+  "joint_signs": [
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "joint_names": [
+    "left_leg_roll_joint",
+    "left_leg_yaw_joint",
+    "left_leg_pitch_joint",
+    "left_knee_joint",
+    "left_ankle_joint",
+    "right_leg_roll_joint",
+    "right_leg_yaw_joint",
+    "right_leg_pitch_joint",
+    "right_knee_joint",
+    "right_ankle_joint"
+  ],
+  "default_angles": [
+    0.0,
+    0.0,
+    0.17,
+    -0.34,
+    -0.09,
+    0.0,
+    0.0,
+    -0.17,
+    0.34,
+    0.09
+  ]
+}

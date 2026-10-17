@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.Python
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Training artefacts that are NOT part of the release
+results/**/checkpoints/
+logs/
+wandb/
+tb_logs/
+
+# Local data: the source stock video is never committed (see data/README.md)
+data/video/
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

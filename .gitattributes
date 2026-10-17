@@ -1,0 +1,13 @@
+# Released model weights are tracked with Git LFS (~400 MB).
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# TensorBoard event files are binary
+*.tfevents.* -text
+
+# Binary arrays
+*.npy binary
+*.npz binary
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf

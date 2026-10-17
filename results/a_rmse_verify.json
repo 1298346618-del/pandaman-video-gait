@@ -1,0 +1,25 @@
+{
+  "model": "results/improved_ab/best/best_model.zip",
+  "n_episodes": 20,
+  "max_ep_steps": 500,
+  "ref": "sinusoidal (analytic, TARGET_JOINT_POS_SCALE=0.26)",
+  "total_reward": {
+    "mean": 1850.2216793045313,
+    "std": 147.04640521121337
+  },
+  "ep_length": {
+    "mean": 500.0,
+    "std": 0.0
+  },
+  "survived_full": 1.0,
+  "imitation_rmse": {
+    "mean": 0.1727517037775075,
+    "std": 0.004548080173237922,
+    "min": 0.16598173364327817,
+    "max": 0.18661142396732106
+  },
+  "imitation_vel_rmse": {
+    "mean": 1.9555415303755548,
+    "std": 0.04093153537635817
+  }
+}

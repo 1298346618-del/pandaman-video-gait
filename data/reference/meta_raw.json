@@ -1,0 +1,20 @@
+{
+  "reference_variant": "no_smoothing_or_lr_symmetrization",
+  "retained_processing": [
+    "fft_stride_period_estimation",
+    "multi_cycle_averaging",
+    "phase_resampling_to_120_samples",
+    "robot_joint_mapping_and_scaling",
+    "joint_limit_clipping"
+  ],
+  "omitted_processing": [
+    "savitzky_golay_smoothing",
+    "left_right_half_cycle_symmetrization"
+  ],
+  "clip_to_limits": true,
+  "n_cycle_out": 120,
+  "cycle_time_robot": 0.64,
+  "human_stride_period_s": 1.0787878787878789,
+  "fps": 30.0,
+  "note": "Ablation D omits S-G smoothing and L/R symmetrization; the processing lists record the exact executed variant."
+}
