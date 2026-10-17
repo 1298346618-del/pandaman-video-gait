@@ -62,6 +62,11 @@ Each stage is an independent, auditable script in [`scripts/`](scripts), and eve
 verification harness (`gate1_verify.py` checks swing amplitude, anti-phase correlation, joint
 limits and stance consistency before any training starts).
 
+### Demo
+
+Side-by-side human / robot comparison (12 s):
+[`demos/human_robot_sync_12s.mp4`](demos/human_robot_sync_12s.mp4)
+
 ---
 
 ## Repository layout
