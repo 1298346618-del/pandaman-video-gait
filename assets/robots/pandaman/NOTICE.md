@@ -50,5 +50,10 @@ assets.
 
 `mjcf/pandaman.xml` uses the legacy `<flag sensornoise="enable">` attribute, accepted
 by MuJoCo 2.3.3 (the version used in the paper) but rejected by MuJoCo ≥ 3.1. If you
-run a newer MuJoCo, remove `sensornoise="enable"` from the `<flag>` element — the flag
-only controls simulated sensor noise, which this task does not read.
+run a newer MuJoCo, delete **only** the `sensornoise="enable"` token from the `<flag>`
+element.
+
+Do **not** remove `frictionloss="enable"` as well: a joint in this model carries
+`frictionloss="0.01"`, so dropping that flag silently changes the contact/joint
+dynamics and your results will no longer be comparable with the paper. For exact
+reproduction use `mujoco==2.3.3`.

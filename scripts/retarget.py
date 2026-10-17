@@ -101,7 +101,14 @@ def extract_human_joints(lm):
 # 2. MuJoCo sign calibration: for each joint, +0.1 rad moves the foot which way?
 # ---------------------------------------------------------------------------
 def load_model_compat(xml_path):
-    """Load MJCF, stripping legacy attributes unsupported by MuJoCo >= 3.x."""
+    """Load MJCF, stripping legacy attributes unsupported by MuJoCo >= 3.x.
+
+    NOTE: this shim is only for forward-kinematics use (retargeting, joint-sign
+    calibration, phase export), where dropping ``frictionloss`` has no effect on
+    the computed joint angles. The RL environment must NOT use it -- there a joint
+    carries ``frictionloss="0.01"`` and the flag changes the dynamics. Use
+    MuJoCo 2.3.3 for training/evaluation.
+    """
     with open(xml_path, "r", encoding="utf-8") as f:
         xml = f.read()
     xml = xml.replace(' sensornoise="enable"', "")

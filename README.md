@@ -108,7 +108,9 @@ exactly as used in the paper.
 
 > ⚠️ **MuJoCo ≥ 3.1 users:** `assets/robots/pandaman/mjcf/pandaman.xml` contains the legacy
 > `<flag sensornoise="enable">` attribute that newer MuJoCo rejects. Either install
-> `mujoco==2.3.3` or delete that attribute (it only toggles simulated sensor noise).
+> `mujoco==2.3.3`, or delete **only** that token (keep `frictionloss="enable"`, which affects
+> the dynamics of a joint with `frictionloss="0.01"`). The `scripts/` pipeline already ships a
+> compatibility shim (`load_model_compat`) for forward-kinematics use.
 
 > **No GPU?** Scripts default to `device="cuda"`; change it to `"auto"` for CPU evaluation.
 
