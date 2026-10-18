@@ -213,7 +213,7 @@ regenerable with `train_robio.py`.
   from the Humanoid-Gym / legged_gym lineage — see
   [`assets/robots/pandaman/NOTICE.md`](assets/robots/pandaman/NOTICE.md).
 * Policy architecture and environment are shared with the companion RA-PPO release:
-  [Pandaman-rappo](https://github.com/1298346618-del/Pandaman-rappo).
+  [pandaman-rappo](https://github.com/1298346618-del/pandaman-rappo).
 * Built with [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3),
   [MediaPipe](https://mediapipe.dev/), [MuJoCo](https://mujoco.org/).
 
