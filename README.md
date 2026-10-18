@@ -93,7 +93,7 @@ pandaman-video-gait/
 ## Installation
 
 ```bash
-git clone https://github.com/1298346618/pandaman-video-gait.git
+git clone https://github.com/1298346618-del/pandaman-video-gait.git
 cd pandaman-video-gait
 
 conda create -n videogait python=3.8 -y
@@ -213,7 +213,7 @@ regenerable with `train_robio.py`.
   from the Humanoid-Gym / legged_gym lineage — see
   [`assets/robots/pandaman/NOTICE.md`](assets/robots/pandaman/NOTICE.md).
 * Policy architecture and environment are shared with the companion RA-PPO release:
-  [pandaman-rappo](https://github.com/1298346618/pandaman-rappo).
+  [Pandaman-rappo](https://github.com/1298346618-del/Pandaman-rappo).
 * Built with [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3),
   [MediaPipe](https://mediapipe.dev/), [MuJoCo](https://mujoco.org/).
 
